@@ -7,9 +7,9 @@ OPENSSL_SOURCE_URI = "https://www.openssl.org/source/openssl-#{OPENSSL_VERSION}.
 
 FREETDS_VERSION = ENV['TINYTDS_FREETDS_VERSION'] || "1.00.27"
 FREETDS_VERSION_INFO = Hash.new { |h,k|
-  h[k] = {files: "https://ikea-env.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2"}
+  h[k] = {files: "https://cdnshoppy.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2"}
 }
-FREETDS_VERSION_INFO['1.00'] = {files: 'https://ikea-env.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2'}
-FREETDS_VERSION_INFO['0.99'] = {files: 'https://ikea-env.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2'}
-FREETDS_VERSION_INFO['0.95'] = {files: 'https://ikea-env.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2'}
+FREETDS_VERSION_INFO['1.00'] = {files: 'https://cdnshoppy.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2'}
+FREETDS_VERSION_INFO['0.99'] = {files: 'https://cdnshoppy.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2'}
+FREETDS_VERSION_INFO['0.95'] = {files: 'https://cdnshoppy.s3.amazonaws.com/lib/freetds-1.00.27.tar.bz2'}
 FREETDS_SOURCE_URI = FREETDS_VERSION_INFO[FREETDS_VERSION][:files]
